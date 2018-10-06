@@ -32,9 +32,8 @@ cat("The plot will be printed in the following file: ", getwd(), "/", savePlotFi
 
 
 # Plot the chart.
-plot(humanWeights, humanHeights, col = "red", main = "height and weight regression",
+plot(humanWeights, humanHeights, col = "blue", main = "height and weight regression",
 abline(lm(humanHeights~humanWeights), col = "green"), cex = 1.3, pch = 16, xlab = "weight in kg", ylab = "height in cm")
 
 # Save the file.
 dev.off()
-
